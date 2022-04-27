@@ -30,7 +30,14 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    '@spearly/nuxt-module',
   ],
+  spearly: {
+    options: {
+      apiKey: '8EhpZKa8-WVfz3W4gw213N0OfM_FglIdLAceX5aC_fY',
+    },
+    mode: 'all',
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
