@@ -5,7 +5,7 @@
         {{ item.content.values.title }}
         <img :src="item.content.values.image" />
         {{ item.content.values.description }}
-        {{ item.content.values.date }}
+        {{ $dayjs(item.content.values.date).format(`YYYY-MM-DD`) }}
       </nuxt-link>
     </template>
   </spearly-content-list>
